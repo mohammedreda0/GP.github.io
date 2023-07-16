@@ -7,7 +7,10 @@ body {
   font-family: "Poppins", sans-serif;
   background: radial-gradient(#fff, #ffd6d6);
 }
-
+html,body{
+  width: 100%;
+  overflow-x: hidden;
+}
 .row {
     display: flex;
     align-items: center;
@@ -68,7 +71,7 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 0px 20px;
 }
 
 nav ul li a{
@@ -104,7 +107,44 @@ nav ul li a:hover{
   padding: 7px 3px;
   transition: 0.4s;
 }
+.menu-icon {
+  width: 55px;
+  margin-left: 20px;
+  position: absolute;
+  right: 18px;
+  top: 30px;
+  display: none;
+}
 
+/* .home{
+  display: grid;
+  grid-template-columns: 50% 50%;
+} */
+@media only screen and (max-width: 800px) {
+  nav ul {
+    z-index: 1;
+    position: absolute;
+    top: 92px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin-right: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  nav ul li a {
+    color: #fff;
+  }
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
   
   .log {
     color: rgb(104, 85, 224);
@@ -193,7 +233,7 @@ span{
   
   .testimonial .col-3 {
     text-align: center;
-    padding: 80px 2px;
+    padding: 60px 2px;
     box-shadow: 0 0 20px 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
     transition: transform 0.5s;
@@ -212,7 +252,7 @@ span{
   
   .col-3 p {
     font-size: 12px;
-    margin: 12px 0;
+    margin: 12px 10px;
     color: #777;
   }
   

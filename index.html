@@ -14,17 +14,20 @@
             <nav>
                 <a href="" class="logo"><i class="fa-solid fa-vr-cardboard fa-4x"></i></a>
 
-                <ul>
-                    <li><a href="">HOME</a></li>
+                <ul id="MenuItems">
+                    <li><a href="index.html">HOME</a></li>
                     <li><a href="aboutus.html">ABOUT US</a></li>
                     <li><a href="data.html">DATA</a></li>
                     <li><button class="btn log" id="myBtn">LOGIN</button></li>
 
                 </ul>
             </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
             
 
         </div>
+        <div class="row">
             <div class="info">
                 <h1 class="anim"><span>VR</span> PROJECT</h1>
                 <p class="anim">The project’s goal is to create a VR gaming platform using the mirror therapy effect.
@@ -34,20 +37,20 @@
                     The game will offer a range of levels from basic to advanced for each age group. 
                     This program is expected to aid in regaining the function of joints whose mobility has been compromised by subacute stroke or its consequences.  
                 </p>
-            </div>
+                <div class="social-links anim">
 
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+
+                </div>
+            </div>
             <div class="img-box">
                 <img src="images/pattern.png" class="back-img">
                 <img src="images/vr.png" class="main-img">
             </div>
-
-            <div class="social-links anim">
-
-                <a href=""><i class="fab fa-linkedin-in"></i></a>
-                <a href=""><i class="fab fa-facebook"></i></a>
-                <a href=""><i class="fa-regular fa-envelope"></i></a>
-
-            </div>
+        </div>
+            
 
             <!-- The Modal -->
             <div id="myModal" class="modal">
@@ -81,6 +84,17 @@
     </div>
 
     <script src="js/account.js"></script>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
 
 </body>
 
