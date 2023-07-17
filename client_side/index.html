@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VR</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a2ceedc6c.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="first">
+        <div class="navbar">
+
+            <nav>
+                <a href="" class="logo"><i class="fa-solid fa-vr-cardboard fa-4x"></i></a>
+
+                <ul id="MenuItems">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="aboutus.html">ABOUT US</a></li>
+                    <li><a href="data.html">DATA</a></li>
+                    <li><button class="btn log" id="myBtn">LOGIN</button></li>
+
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+
+            
+
+        </div>
+        <div class="row">
+            <div class="info">
+                <h1 class="anim"><span>VR</span> PROJECT</h1>
+                <p class="anim">The project’s goal is to create a VR gaming platform using the mirror therapy effect.
+                    VR has the ability to overcome the drawbacks of traditional treatment in the field of stroke rehabilitation. 
+                    Because the upper limb is involved in most ADLs, improving upper limb (UL) function is essential in stroke deficits.  
+                    The game is anticipated to contain a number of therapy modules that suit patients of various ages, from children to elderly people. 
+                    The game will offer a range of levels from basic to advanced for each age group. 
+                    This program is expected to aid in regaining the function of joints whose mobility has been compromised by subacute stroke or its consequences.  
+                </p>
+                <div class="social-links anim">
+
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fa-regular fa-envelope"></i></a>
+
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="images/pattern.png" class="back-img">
+                <img src="images/vr.png" class="main-img">
+            </div>
+        </div>
+            
+
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+                <div class="cont"> 
+                    <div class="form-container anim">
+                    <span class="close">&times;</span>
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot Password</a>
+                        </form>
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            
+            </div>
+
+    </div>
+
+    <script src="js/account.js"></script>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

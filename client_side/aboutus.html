@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7a2ceedc6c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="navbar">
+
+        <nav>
+            <a href="" class="logo"><i class="fa-solid fa-vr-cardboard fa-4x"></i></a>
+
+            <ul id="MenuItems">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="data.html">DATA</a></li>
+                <li><button class="btn log" id="myBtn">LOGIN</button></li>
+
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        
+
+    </div>
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="anim col-3" id="ah">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Student at Cairo University Faculty of engineering Systems and Bio-Medical enginnering department.</br></br>
+                        abdelrahmanhassan081@gmail.com</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/abdelrahman hassan.jpg">
+                    <h3>Abdelrahman Hassan</h3>
+                </div>
+                <div class="anim col-3" id="aa">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Student at Cairo University Faculty of engineering Systems and Bio-Medical enginnering department.</br></br>
+                        hamadasad0@gmail.com</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/mohammed magdy.JPG">
+                    <h3>Mohammed Magdy</h3>
+                </div>
+                <div class="anim col-3" id="mm">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Student at Cairo University Faculty of engineering Systems and Bio-Medical enginnering department.</br></br>
+                    mohammedreda094@gmail.com</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/reda.jpg">
+                    <h3>Mohammed Reda</h3>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="anim col-3" id="mr">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Student at Cairo University Faculty of engineering Systems and Bio-Medical enginnering department.</br></br>
+                        heshamg367@gmail.com</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/hesham gamal.jpg">
+                    <h3>Hesham Gamal</h3>
+                </div>
+                <div class="anim col-3" id="hg">
+                    <i class="fa fa-quote-left"></i>
+                    <p>Student at Cairo University Faculty of engineering Systems and Bio-Medical enginnering department.</br></br>
+                        abdelrahman7266@gmail.com</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/abelrahman ashraf.jpeg">
+                    <h3>Abdelrahman Ashraf</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="cont"> 
+
+            <div class="form-container anim">
+            <span class="close">&times;</span>
+
+                <div class="form-btn">
+                    <span onclick="login()">Login</span>
+                    <span onclick="register()">Register</span>
+                    <hr id="Indicator">
+                </div>
+                <form id="LoginForm">
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Login</button>
+                    <a href="">Forgot Password</a>
+                </form>
+                <form id="RegForm">
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="js/account.js"></script>
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        MenuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px";
+            }else{
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
